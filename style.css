@@ -1,54 +1,3 @@
-/* @font-face {
-    font-family: norse-bold;
-    src: url(assets/Norse-Bold.otf);
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-body, .logo-box {
-    display: flex;
-}
-
-.img-place {
-    flex: 1;
-    position: relative;
-    height: 100%;
-}
-
-.img-place img[alt="background image"] {
-    max-height: 100%;
-}
-
-.logo-box {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100px;
-    top: 20%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.logo-box img[alt="logo"] {
-    height: 100%;
-}
-
-.logo-name {
-    color: white;
-    font-family: norse-bold;
-    font-size: 48px;
-}
-
-.form-actions {
-    flex: 2;
-} */
-
-
 @font-face {
     font-family: norse-bold;
     src: url(assets/Norse-Bold.otf);
@@ -59,7 +8,14 @@ html, body {
     width: 100%;
 }
 
-body, .logo-box, .img-place {
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body,
+.logo-box,
+.img-place,
+.form-actions {
     display: flex;
 }
 
@@ -68,7 +24,7 @@ body {
 }
 
 .img-place {
-   flex: 1.1;
+   flex: 1;
    position: relative;
    overflow: hidden;
    justify-content: center;
@@ -118,4 +74,22 @@ p.cite {
 
 .form-actions {
     flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #1F1D36;
+    color: aliceblue; */
+}
+
+.welcome {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 36px;
+    margin-bottom: 28px;
+}
+
+.personal-info {
+    padding: 36px;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 0px 5px 7px #E5E7EB;
 }
