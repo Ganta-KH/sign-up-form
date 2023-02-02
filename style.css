@@ -1,3 +1,7 @@
+:root {
+    --color-valid: #E5E7EB;
+}
+
 @font-face {
     font-family: norse-bold;
     src: url(assets/Norse-Bold.otf);
@@ -30,6 +34,7 @@ body {
    position: relative;
    overflow: hidden;
    justify-content: center;
+   min-width: 200px;
 
 }
 
@@ -97,8 +102,9 @@ p.cite {
 }
 
 .form-row {
-    gap: 5px;
+    gap: 16px;
     justify-content: flex-start;
+    margin-bottom:12px;
 }
 
 .form-item {
@@ -108,10 +114,35 @@ p.cite {
 
 .form-item label {
     font-size: 14px;
+    font-weight: 600;
 }
 
 .form-item input {
     font-size: 20px;
+    border: 1px solid var(--color-valid);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 4px 10px;
+    outline: none;
+}
+
+.form-item input::placeholder {
+    color: #bdbdc0;
+}
+
+.form-item input:focus {
+    box-shadow: 2px 2px 7px #bdbdc0;
+    border: 1px solid blue;
+    transition: .5s;
+    -webkit-transition: 0.5s;
+}
+
+.form-item input:invalid {
+    --color-valid: red;
+}
+
+.error:invalid {
+
 }
 
 button.signup {
