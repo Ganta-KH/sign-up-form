@@ -31,7 +31,7 @@
             <p>You know you want to.</p>
         </div>
 
-        <form action="" method="post">
+        <form action="" method="get">
             <div class="personal-info">
                 <h2>Let's de this!</h2>
                 <div class="form-row">
@@ -58,10 +58,12 @@
                 <div class="form-row">
                     <div class="form-item">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="password" class="error" min="8" required>                    </div>
+                        <input type="password" id="pwd" name="password" required>  
+                        <span style="color: red; font-size: 14px;" id="error"></span>
+                    </div>
                     <div class="form-item">
                         <label for="c-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="c-pwd" name="c-password" class="error" required>
+                        <input type="password" id="c-pwd" name="c-password" required>
                         
                     </div>
                 </div>

@@ -141,10 +141,6 @@ p.cite {
     --color-valid: red;
 }
 
-.error:invalid {
-
-}
-
 button.signup {
     padding: 12px 42px;
     font-weight: bold;
